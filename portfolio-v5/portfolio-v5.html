@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio | [Your Name]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+        .project-card {
+            transition: transform 0.3s ease, shadow 0.3s ease;
+            border: none;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+        section { padding: 80px 0; }
+        .nav-link { font-weight: 500; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">PORTFOLIO.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Hi, I'm [Your Name]</h1>
+            <p class="lead mb-4">A Passionate Full-Stack Developer & UI/UX Enthusiast</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#projects" class="btn btn-light btn-lg px-4">View My Work</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Technical Skills</h2>
+                <p class="text-muted">My specialized tools and technologies for building modern web solutions.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <h5 class="fw-bold mb-3 text-primary"><i class="bi bi-laptop me-2"></i>Frontend</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-secondary px-3 py-2">HTML5 / CSS3</span>
+                            <span class="badge bg-secondary px-3 py-2">JavaScript (ES6+)</span>
+                            <span class="badge bg-secondary px-3 py-2">React.js</span>
+                            <span class="badge bg-secondary px-3 py-2">Bootstrap 5</span>
+                            <span class="badge bg-secondary px-3 py-2">Tailwind CSS</span>
+                            <span class="badge bg-secondary px-3 py-2">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <h5 class="fw-bold mb-3 text-success"><i class="bi bi-server me-2"></i>Backend</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-secondary px-3 py-2">Node.js</span>
+                            <span class="badge bg-secondary px-3 py-2">Express.js</span>
+                            <span class="badge bg-secondary px-3 py-2">RESTful APIs</span>
+                            <span class="badge bg-secondary px-3 py-2">SQL (PostgreSQL)</span>
+                            <span class="badge bg-secondary px-3 py-2">NoSQL (MongoDB)</span>
+                            <span class="badge bg-secondary px-3 py-2">Authentication (JWT)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <h5 class="fw-bold mb-3 text-dark"><i class="bi bi-gear-fill me-2"></i>Tools & Deployment</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-secondary px-3 py-2">Git / GitHub</span>
+                            <span class="badge bg-secondary px-3 py-2">Postman</span>
+                            <span class="badge bg-secondary px-3 py-2">VS Code</span>
+                            <span class="badge bg-secondary px-3 py-2">Vercel / Netlify</span>
+                            <span class="badge bg-secondary px-3 py-2">Docker</span>
+                            <span class="badge bg-secondary px-3 py-2">Agile Methodology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Featured Projects</h2>
+                <p class="text-muted">A selection of my recent work and personal experiments.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 project-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="E-Commerce Solution">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">E-Commerce Platform</h5>
+                            <p class="card-text text-muted small">A fully responsive online store featuring product filtering, secure checkout, and user authentication.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Task Management App">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Task Tracker Pro</h5>
+                            <p class="card-text text-muted small">A productivity tool designed to help teams collaborate on projects with real-time updates.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="#" class="btn btn-primary btn-sm">Github Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Portfolio Website">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">AI Dashboard</h5>
+                            <p class="card-text text-muted small">An interactive data visualization dashboard that tracks AI model performance metrics.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-6">
+                <h2 class="fw-bold">Get In Touch</h2>
+                <p class="text-muted">Have a project in mind? Let's discuss how I can help you achieve your goals.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="card shadow-sm p-4">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label class="form-label small fw-bold">Name</label>
+                                <input type="text" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="col">
+                                <label class="form-label small fw-bold">Email Address</label>
+                                <input type="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Subject</label>
+                            <input type="text" class="form-control" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Hi, I'd like to talk about..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-2">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h5 class="fw-bold mb-3">Stay Connected</h5>
+            <div class="mb-4">
+                <a href="#" class="text-white mx-3 text-decoration-none"><i class="bi bi-github fs-3"></i></a>
+                <a href="#" class="text-white mx-3 text-decoration-none"><i class="bi bi-linkedin fs-3"></i></a>
+                <a href="#" class="text-white mx-3 text-decoration-none"><i class="bi bi-twitter-x fs-3"></i></a>
+            </div>
+            <p class="text-muted small mb-0">&copy; 2026 [Your Name]. Crafted with passion and Bootstrap 5.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
