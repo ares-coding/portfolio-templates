@@ -22,8 +22,8 @@
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org)
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
-![Forks](https://img.shields.io/github/forks/ares-coding/portfolio-templates?style=flat-square)
-![Stars](https://img.shields.io/github/stars/ares-coding/portfolio-templates?style=flat-square)
+[![Forks](https://img.shields.io/github/forks/ares-coding/portfolio-templates?style=flat-square)](https://github.com/ares-coding/portfolio-templates/forks)
+[![Stars](https://img.shields.io/github/stars/ares-coding/portfolio-templates?style=flat-square)](https://github.com/ares-coding/portfolio-templates/stargazers)
 
 </div>
 
@@ -39,29 +39,28 @@ Whether you're a frontend dev, a full-stack engineer, or just getting started �
 
 ## 📁 Templates at a Glance
 
-| Version | Stack | Description |
-|---|---|---|
-| `portfolio-v1` | HTML5 + CSS3 + Vanilla JS | Clean, lightweight — no dependencies, just vibes |
-| `portfolio-v3` | Bootstrap 5 | Grid-based layout, responsive out of the box |
-| `portfolio-v5` | Tailwind CSS | Utility-first, fully customizable in minutes |
-| `portfolio-v6` | React | Component-driven with smooth interactivity |
-| `portfolio-v7` | Next.js | Full-stack ready, SEO-optimized, deploy to Vercel |
+| Version | Languages | Framework / Stack | Level |
+|---|---|---|---|
+| [`portfolio-v1`](./portfolio-v1) | ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white) ![JS](https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Vanilla — no framework, no build step | ⭐ Beginner |
+| [`portfolio-v3`](./portfolio-v3) | ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white) ![JS](https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Bootstrap 5 via CDN | ⭐⭐ Beginner+ |
+| [`portfolio-v5`](./portfolio-v5) | ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white) ![JS](https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Tailwind CSS (CDN or PostCSS) | ⭐⭐ Intermediate |
+| [`portfolio-v6`](./portfolio-v6) | ![JSX](https://img.shields.io/badge/JSX-61DAFB?style=flat-square&logo=react&logoColor=black) ![JS](https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | React (Create React App) | ⭐⭐⭐ Intermediate |
+| [`portfolio-v7`](./portfolio-v7) | ![JSX](https://img.shields.io/badge/JSX-61DAFB?style=flat-square&logo=react&logoColor=black) ![JS](https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Next.js (App Router) | ⭐⭐⭐⭐ Advanced |
 
-> More templates being added regularly. Watch the repo to stay updated.
+> More templates added regularly — watch the repo to stay updated.
 
 ---
 
 ## 🚀 Getting Started
 
-### Option 1 — Clone the whole repo
+### Clone the whole repo
 ```bash
 git clone https://github.com/ares-coding/portfolio-templates.git
 cd portfolio-templates
 ```
 
-### Option 2 — Just grab the template you want
+### Or grab just one template
 ```bash
-# Example: grab only the Tailwind version
 git clone --filter=blob:none --sparse https://github.com/ares-coding/portfolio-templates.git
 cd portfolio-templates
 git sparse-checkout set portfolio-v5
@@ -69,105 +68,170 @@ git sparse-checkout set portfolio-v5
 
 ---
 
-## ⚡ Quick Setup Per Stack
+## ⚡ Quick Setup Per Version
 
 <details>
-<summary><strong>🟠 HTML / CSS / Vanilla JS (v1)</strong></summary>
+<summary><strong>🟠 portfolio-v1 — HTML + CSS + Vanilla JS</strong></summary>
 
-No setup needed. Just open `index.html` in your browser.
+**Languages:** HTML · CSS · JavaScript  
+**Dependencies:** None  
+**Build step:** None
 
 ```bash
 cd portfolio-v1
 open index.html
+# Or just drag index.html into your browser
 ```
+
+No install, no build, no config. Open and edit. Perfect for developers who want full control without any tooling overhead.
 </details>
 
 <details>
-<summary><strong>🔵 Bootstrap (v3)</strong></summary>
+<summary><strong>🔵 portfolio-v3 — Bootstrap 5</strong></summary>
+
+**Languages:** HTML · CSS · JavaScript  
+**Dependencies:** Bootstrap 5 (loaded via CDN — nothing to install)  
+**Build step:** None
 
 ```bash
 cd portfolio-v3
 open index.html
-# Bootstrap is loaded via CDN — no install needed
 ```
+
+Uses Bootstrap's grid system and utility classes. Fast to customize and responsive out of the box.
 </details>
 
 <details>
-<summary><strong>🟢 Tailwind CSS (v5)</strong></summary>
+<summary><strong>🟢 portfolio-v5 — Tailwind CSS</strong></summary>
+
+**Languages:** HTML · CSS · JavaScript  
+**Dependencies:** Tailwind CSS, PostCSS, Autoprefixer  
+**Build step:** `npm run dev`
 
 ```bash
 cd portfolio-v5
 npm install
 npm run dev
 ```
+
+Utility-first styling. Fully customizable by editing Tailwind classes directly in HTML. Modify `tailwind.config.js` to change the color scheme or fonts globally.
 </details>
 
 <details>
-<summary><strong>⚛️ React (v6)</strong></summary>
+<summary><strong>⚛️ portfolio-v6 — React (JSX + JavaScript)</strong></summary>
+
+**Languages:** JSX · JavaScript  
+**Dependencies:** React, ReactDOM, CRA toolchain  
+**Build step:** `npm start`
 
 ```bash
 cd portfolio-v6
 npm install
 npm start
+# Runs at http://localhost:3000
 ```
+
+Component-based architecture. Each section of the portfolio is a separate `.jsx` component — edit them individually to update the page.
 </details>
 
 <details>
-<summary><strong>▲ Next.js (v7)</strong></summary>
+<summary><strong>▲ portfolio-v7 — Next.js (JSX + JavaScript)</strong></summary>
+
+**Languages:** JSX · JavaScript  
+**Dependencies:** Next.js, React, ReactDOM  
+**Build step:** `npm run dev`
 
 ```bash
 cd portfolio-v7
 npm install
 npm run dev
-# Visit http://localhost:3000
+# Runs at http://localhost:3000
 ```
 
-Deploy instantly to Vercel:
+File-based routing with the Next.js App Router. SSR-ready, SEO-optimized, and deploys to Vercel in one click.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com)
-
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ares-coding/portfolio-templates/tree/main/portfolio-v7)
 </details>
 
 ---
 
 ## 🎨 Customization Checklist
 
-Each template is designed to be personalized in under 30 minutes. Here's what to update:
+Each template is designed to be personalized in under 30 minutes:
 
 - [ ] **Name & Title** — swap out placeholder text
 - [ ] **About Section** — write your own bio
-- [ ] **Projects** — add your real work with links and screenshots
-- [ ] **Skills / Tech Stack** — update the icons/tags to match yours
+- [ ] **Projects** — add real work with links and screenshots
+- [ ] **Skills / Tech Stack** — update the icons or tags to match yours
 - [ ] **Contact Links** — GitHub, LinkedIn, email, etc.
-- [ ] **Color Scheme** — tweak CSS variables or Tailwind config
+- [ ] **Color Scheme** — CSS variables (v1/v3/v5) or component styles (v6/v7)
 - [ ] **Favicon** — replace with your own
-- [ ] **Meta Tags** — update OG/SEO metadata for sharing
+- [ ] **Meta Tags** — update OG/SEO metadata for social sharing
 
 ---
 
-## 🗂️ Project Structure (example — v5 Tailwind)
+## 🗂️ Project Structure
+
+<details>
+<summary><strong>v1 / v3 / v5 — Static (HTML-based)</strong></summary>
 
 ```
-portfolio-v5/
+portfolio-vX/
 ├── assets/
-│   ├── images/          # Your profile pic and project screenshots
-│   └── icons/           # Tech stack icons
-├── index.html           # Main entry point
-├── tailwind.config.js   # Theme customization
+│   ├── images/        # Profile photo, project screenshots
+│   ├── icons/         # Tech icons, social icons
+│   └── css/           # Custom stylesheets
+├── index.html         # Single entry point — all content lives here
+└── README.md
+```
+</details>
+
+<details>
+<summary><strong>v6 — React (JSX)</strong></summary>
+
+```
+portfolio-v6/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/    # Hero, About, Projects, Skills, Contact
+│   ├── assets/        # Images and icons
+│   ├── App.jsx
+│   └── index.js
 ├── package.json
 └── README.md
 ```
+</details>
+
+<details>
+<summary><strong>v7 — Next.js (JSX + App Router)</strong></summary>
+
+```
+portfolio-v7/
+├── app/
+│   ├── layout.jsx     # Root layout + metadata config
+│   ├── page.jsx       # Home page
+│   └── globals.css
+├── components/        # Reusable section components
+├── public/            # Static assets
+├── next.config.js
+├── package.json
+└── README.md
+```
+</details>
 
 ---
 
-## 🌐 Deployment Options
+## 🌐 Deployment Guide
 
-| Platform | Template Compatibility | Command |
-|---|---|---|
-| **GitHub Pages** | HTML, Bootstrap, Tailwind | Push to `gh-pages` branch |
-| **Vercel** | React, Next.js, Tailwind | `vercel --prod` |
-| **Netlify** | All | Drag & drop or CLI |
-| **Render** | Next.js, React | Connect repo → auto-deploy |
+| Template | Languages | Best Platform | Method |
+|---|---|---|---|
+| `v1` Vanilla | HTML / CSS / JS | GitHub Pages | Enable Pages on `main` branch |
+| `v3` Bootstrap | HTML / CSS / JS | GitHub Pages / Netlify | Push to repo or drag-and-drop to Netlify |
+| `v5` Tailwind | HTML / CSS / JS | Netlify / GitHub Pages | `npm run build` → deploy `/dist` |
+| `v6` React | JSX / JS | Vercel / Netlify | Connect repo → CRA auto-detected |
+| `v7` Next.js | JSX / JS | **Vercel** (recommended) | Connect repo → zero config deploy |
 
 ---
 
@@ -178,12 +242,9 @@ Got a portfolio design you're proud of? Contributions are welcome.
 1. Fork the repo
 2. Create a new branch: `git checkout -b portfolio-v8-vue`
 3. Add your template in a clearly named folder
-4. Submit a pull request with a short description and preview screenshot
+4. Submit a PR with a short description and a preview screenshot
 
-Please ensure your template:
-- Is fully responsive (mobile + desktop)
-- Has no placeholder content from paid assets
-- Is free of unused dependencies
+Please ensure your template is fully responsive, free of paid assets, and clearly labeled with its stack and languages.
 
 ---
 
@@ -198,6 +259,6 @@ See [`LICENSE`](./LICENSE) for the full text.
 
 Made with 🖤 by [ares-coding](https://github.com/ares-coding)
 
-*If this helped you land a job or impressed a client — drop a ⭐ on the repo.*
+*If this saved you time or helped you land something — drop a ⭐ on the repo.*
 
 </div>
