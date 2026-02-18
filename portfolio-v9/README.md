@@ -43,7 +43,7 @@ Built with the **Next.js 14 App Router**, **Tailwind CSS**, and **TypeScript**. 
 | 👤 **About** | Full biography + core strength cards + stats |
 | ⚡ **Tech Expertise** | 3 glowing feature cards: ML · Full Stack · Security/NLP |
 | 🧰 **Tech Stack** | Complete grid of 50+ tools with hover neon effects |
-| 🗂️ **Projects** | 6 project cards with gradient thumbnails and tech tags |
+| 🗂️ **Projects** | 20+ project cards with gradient thumbnails and tech tags |
 | 🕐 **Experience** | Glowing vertical timeline with alternating card layout |
 | 📬 **Contact** | Frontend form with neon focus states |
 
